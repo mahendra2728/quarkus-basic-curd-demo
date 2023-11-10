@@ -1,0 +1,32 @@
+
+This example is for basic curd operation using Panache with h2 in-memory
+
+To Access
+- Quarkus DevUI : http://localhost:8080/q/dev-ui/
+- To see the Swagger Open API Docs : http://localhost:8080/q/swagger-ui/
+
+
+To Add User :
+
+curl -X 'POST' \
+  'http://localhost:8080/users' \
+  -H 'accept: text/plain' \
+  -H 'Content-Type: application/json' \
+  -d '{"firstName": "Dean","lastName": "Ambrose"}'
+
+--------------------------------------------------------
+Get all Users :
+
+curl -X 'GET' \
+  'http://localhost:8080/users' \
+  -H 'accept: application/json'
+
+----------------------------------------------------------
+Get User By Id
+
+curl -X 'GET' \
+  'http://localhost:8080/users/1' \
+  -H 'accept: application/json'
+
+----------------------------------------------------------
+
